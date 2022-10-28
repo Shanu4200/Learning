@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Elvis Thymeleaf</title>
+</head>
+<body>
+ <h1>Elvis Thymeleaf</h1>
+ 
+ <h2>
+  User is <span th:style="${isActive} ? 'color:green' : 'color:red' " 
+     th:text="${isActive} ? 'ACTIVE' : 'NOT ACTIVE'"></span>
+ </h2>
+ 
+</body>
+</html>
